@@ -1,16 +1,15 @@
-<<<<<<< HEAD
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
 # Hackathon-17.06.2025
->>>>>>> 8baa6ba6fc3c8c001bb0f50fade6508f00ca91b1
+Autorzy: Arkadiusz Żabicki i Miłosz Byrczek
+
+Funkcjonalności projektu: Interaktwna tablica ogłoszeniowa pozwalająca mieszkańcom Jaworzna na komunikację pomiędzy wszystkimi dzielnicami miasta w celu integracji społecznej. Każda dzielnica posiada osobną tablicę na której mieszkańcy mogą dodawać i usuwać notatki. Poza tytułem i treścią notatki, autor może także się podpisać lub pozostać anonimowym w wypadku braku podania danych w rubryce "Podpis". Dodatkowo przy każdej notatce zawarta jest data i godzina jej dodania.
+
+Możliwości rozwoju:
+- Implementacja systemu drag and drop dla notatek na tablicy.
+- Implementacja systemu logowania się wraz z bazą danych.
+- Implementacja systemu podziału notatek na kategorie.
+- Implementacja systemu sortowania, filtrowania oraz wyszukiwarki notatek.
+- Możliwość dodawania multimediów do notatek.
+- Komentarze i reakcje pod notatkami.
+
+Wykorzystane technologie:
+- React
