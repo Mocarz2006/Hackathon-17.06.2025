@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(129, 181, 228);
+    overflow: hidden;
+}
+
+.board{
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    padding: 20px;
+    background-image: url(../assets/board-bg.jpg);
+    box-shadow: 10px 10px 10px 0 rgba(39, 39, 39, 0.315);
+    overflow: auto;
+    border: 2px solid rgba(39, 39, 39, 0.555);
+    border-radius: 10px;
+}
+
+.notes{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 15px;
+}
+
+.add-note{
+    position: fixed;
+    bottom: -20px;
+    right: 80px;
+}
+
+.add-note img{
+    width: 200px;
+    transition: all ease-in-out 0.3s;
+    transform: rotate(-28deg);
+}
+
+.add-note img:hover{
+    transform: rotate(-20deg) scale(1.1);
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: bisque;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0 rgba(39, 39, 39, 0.315);
+    border: 2px solid rgba(39, 39, 39, 0.555);
+}
+
+.return-button{
+    position: fixed;
+    z-index: 1;
+    top: -12px;
+    left: 20px;
+}
+
+.return-sign{
+    text-decoration: none;
+    color: black;
+}
+
+.return-sign img{
+    width: 220px;
+    height: 220px;
+    transform: rotate(-20deg);
+    transition: all ease-in-out 0.2s;
+}
+
+.return-sign img:hover{
+    width: 220px;
+    height: 220px;
+    transform: rotate(-20deg) scale(1.05);
+}
