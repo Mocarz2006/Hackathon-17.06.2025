@@ -9,8 +9,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(129, 181, 228);
     overflow: hidden;
+    
 }
 
 .board{

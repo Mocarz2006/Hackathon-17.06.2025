@@ -3,11 +3,18 @@
     z-index: 5;
     width: fit-content;
     height: fit-content;
-    max-width: 200px;
+    max-width: 300px;
     background-color: rgba(252,222,72,255);
     box-shadow: 10px 10px 10px 0 rgba(39, 39, 39, 0.315);
     border-radius: 5px;
     padding: 15px;
+    transition: all ease-in-out 0.2s;
+}
+
+.note-container:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px 0 rgba(39, 39, 39, 0.445);
+    cursor: pointer;
 }
 
 .note-title{
@@ -43,4 +50,88 @@
     background-color: rgb(240, 83, 83);
     cursor: pointer;
     transform: scale(0.85)
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    word-wrap: break-word;
+    z-index: 100;
+    top: 30px;
+    left: 30px;
+    width: 86vw;
+    height: 82vh;
+    overflow: auto;
+    background-color: rgba(252,222,72,255);
+    box-shadow: 15px 15px 15px 0 rgba(39, 39, 39, 0.384);
+    border-radius: 5px;
+    border: 2px solid rgb(167, 158, 38);
+}
+
+.modal-content{
+    margin-top: 15px;
+}
+
+.modal-note-title{
+    font-size: 2rem;
+}
+
+.modal-note-content{
+    margin-top: 30px;
+}
+
+.modal-note-author{
+    margin-top: 15px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.modal-close-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: red;
+    border: 2px solid rgb(53, 0, 0);
+    transition: all ease-in-out 0.2s;
+}
+
+.modal-close-button:hover{
+    background-color: rgb(240, 83, 83);
+    cursor: pointer;
+    transform: scale(0.85)
+}
+
+@keyframes fallAndFade {
+  0% {
+    transform: rotate(0deg) translateY(0);
+    opacity: 1;
+  }
+  20% {
+    transform: rotate(-5deg) translateY(20px);
+    opacity: 0.95;
+  }
+  50% {
+    transform: rotate(8deg) translateY(120px);
+    opacity: 0.7;
+  }
+  80% {
+    transform: rotate(-12deg) translateY(250px);
+    opacity: 0.3;
+  }
+  100% {
+    transform: rotate(5deg) translateY(400px);
+    opacity: 0;
+  }
+}
+
+.removing {
+  animation: fallAndFade 0.9s cubic-bezier(0.55, -0.04, 0.91, 0.94) forwards;
+  pointer-events: none;
 }
